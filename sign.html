@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="first-container">
+    <div class="form-box">
+      <div class="botton-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+        <button type="button" class="toggle-btn" onclick="register()">Renewal</button>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a>
+      </div>
+      <form id="login" class="input-group" action="sign.html" method="post">
+        <input type="text" class="input-field" placeholder="User-Id" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"> <span>Remember Password</span>
+        <button type="submit" class="submit-btn" name="button">Log in</button>
+      </form>
+
+      <form id="register" class="input-group" action="sign.html" method="post">
+        <input type="text" class="input-field" placeholder="User-Id" required>
+       <input type="email" class="input-field" placeholder="Email Id" required>
+        <input type="text" class="input-field" placeholder="Create Password" required>
+        <h5 class="heading">Start date</h5>
+       <input type="date" class="input-field" placeholder="Start Date" required >
+       <h5 class="heading">Expiry date</h5>
+       <input type="date" class="input-field" placeholder="Expiry Date" required >
+       <input type="text" class="input-field" placeholder="Payment Method" required >
+        <input type="checkbox" class="check-box"> <span>I agree to the terms & condition</span>
+        <button type="submit" class="submit-btn" name="button">Register</button>
+      </form>
+    </div>
+
+  </div>
+  <script>
+    var x= document.getElementById("login");
+    var y= document.getElementById("register");
+    var z= document.getElementById("btn");
+
+    function register(){
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+    }
+    function login(){
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0";
+    }
+  </script>
+</body>
+
+</html>
